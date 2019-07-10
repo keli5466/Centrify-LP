@@ -14,6 +14,15 @@ body{
 		max-width: 1260px;
 	}
 }
+.hero{
+	background: url('./img/Hero.png');
+	min-height: 500px;
+	display: flex;
+	h1{
+		font-size: 66px;
+		margin-top: 10vh;
+	}
+}
 .info-table{
 		background: $light-grey;
 }
@@ -21,10 +30,59 @@ body{
 	font-size: 17px;
 	color:#5d4b6c;
 	line-height: 1.47;
+	[check]{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:after{
+			content: url(./img/check.png);
+			display: inline-block;
+		}
+
+	}
 
 	// Table cards
 	thead th{
+		margin-top: -150px;
 		margin-bottom: 30px;
+		&:nth-child(2){
+			background: #540505;
+		}
+		&:nth-child(3){
+			background: #7a0000;
+		}
+		&:nth-child(4){
+			background: #ae0000;
+		}
+		.table-top-card{
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			height: 100%;
+			color: white;
+			p{
+				opacity: 0.5;
+				margin-bottom: 30px;
+			}
+			h2{
+				margin-bottom: auto;
+				font-size: 25px;
+				line-height: 1.4;
+				font-weight: 300;
+			}
+			.table-btn{
+				margin: 50px auto 5%;
+				padding: 13px 45px;
+				color:$red;
+				font-weight: bold;
+				background: white;
+				text-transform: uppercase;
+				&:hover{
+					text-decoration: none;
+					opacity: 0.8;
+				}
+			}
+		}
 	}
 
 
