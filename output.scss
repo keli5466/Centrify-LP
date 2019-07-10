@@ -164,7 +164,6 @@ body{
 
 
 
-
 .box-grid{
 	> div{
 		height: 100%;
@@ -184,5 +183,23 @@ body{
 			 font-size: 20px;
 		 }
 	}
+}
 
+// Brand grid
+.brands{
+	background: $light-grey;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	h3{
+		font-size:45px;
+		line-height: 1.22;
+		margin-bottom: 100px;
+	}
+	.brand-grid{
+		.brand{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 }

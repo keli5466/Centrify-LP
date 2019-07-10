@@ -164,4 +164,20 @@ body {
   font-size: 20px;
 }
 
+.brands {
+  background: #f2f2f2;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.brands h3 {
+  font-size: 45px;
+  line-height: 1.22;
+  margin-bottom: 100px;
+}
+.brands .brand-grid .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */
