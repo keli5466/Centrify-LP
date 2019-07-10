@@ -2,6 +2,9 @@ body {
   font-family: "Muli";
 }
 
+#lp {
+  color: #280606;
+}
 #lp .container {
   max-width: 1260px;
 }
@@ -18,12 +21,14 @@ body {
 
 .info-table {
   background: #f2f2f2;
+  height: 100%;
 }
 
 .table {
   font-size: 17px;
   color: #5d4b6c;
   line-height: 1.47;
+  margin-bottom: 114px;
 }
 .table [check] {
   display: flex;
@@ -48,15 +53,12 @@ body {
   background: #ae0000;
 }
 .table thead th .table-top-card {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   height: 100%;
-  color: white;
 }
 .table thead th .table-top-card p {
   opacity: 0.5;
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 .table thead th .table-top-card h2 {
   margin-bottom: auto;
@@ -66,11 +68,17 @@ body {
 }
 .table thead th .table-top-card .table-btn {
   margin: 50px auto 5%;
-  padding: 13px 45px;
+  display: flex;
+  align-items: center;
+  padding: 14px 10px;
+  max-width: 175px;
+  width: 100%;
+  justify-content: center;
   color: #ae0000;
-  font-weight: bold;
+  font-weight: 900;
   background: white;
   text-transform: uppercase;
+  border-radius: 5px;
 }
 .table thead th .table-top-card .table-btn:hover {
   text-decoration: none;
@@ -85,6 +93,9 @@ body {
 .table th {
   width: 26%;
   padding: 21px;
+}
+.table tr th:first-of-type {
+  padding-left: 0;
 }
 .table th:not(:first-of-type),
 .table td {
@@ -124,7 +135,6 @@ body {
   color: #ae0000;
   font-weight: bold;
   text-transform: uppercase;
-  padding-left: 21px;
 }
 .table .title .title-line span:after {
   content: "";
@@ -133,6 +143,25 @@ body {
   background: #ae0000;
   margin-left: 68px;
   display: inline-block;
+}
+
+.box-grid > div {
+  height: 100%;
+}
+.box-grid .box {
+  margin: 100px auto;
+  box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
+  min-height: 250px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 7%;
+}
+.box-grid .box img {
+  margin-bottom: 28px;
+}
+.box-grid .box p {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

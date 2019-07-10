@@ -10,6 +10,7 @@ body{
 	font-family: "Muli";
 }
 #lp{
+	color: #280606;
 	.container{
 		max-width: 1260px;
 	}
@@ -25,11 +26,13 @@ body{
 }
 .info-table{
 		background: $light-grey;
+		height: 100%;
 }
 .table{
 	font-size: 17px;
 	color:#5d4b6c;
 	line-height: 1.47;
+	margin-bottom: 114px;
 	[check]{
 		display: flex;
 		justify-content: center;
@@ -55,14 +58,11 @@ body{
 			background: #ae0000;
 		}
 		.table-top-card{
-			display: flex;
-			flex-direction: column;
-			text-align: center;
 			height: 100%;
-			color: white;
 			p{
 				opacity: 0.5;
 				margin-bottom: 30px;
+				margin-top: 10px;
 			}
 			h2{
 				margin-bottom: auto;
@@ -72,11 +72,17 @@ body{
 			}
 			.table-btn{
 				margin: 50px auto 5%;
-				padding: 13px 45px;
+				display: flex;
+				align-items: center;
+				padding: 14px 10px;
+				max-width: 175px;
+				width: 100%;
+				justify-content: center;
 				color:$red;
-				font-weight: bold;
+				font-weight: 900;
 				background: white;
 				text-transform: uppercase;
+				border-radius: 5px;
 				&:hover{
 					text-decoration: none;
 					opacity: 0.8;
@@ -100,6 +106,9 @@ body{
 	th{
 		width:26%;
 		padding: $cell-inner-pad;
+	}
+	tr th:first-of-type{
+		padding-left: 0;
 	}
 	th:not(:first-of-type),
 	td{
@@ -139,7 +148,6 @@ body{
 				color: $red;
 				font-weight: bold;
 				text-transform: uppercase;
-				padding-left: $cell-inner-pad;
 
 				&:after{
 					content: '';
@@ -152,4 +160,29 @@ body{
 			}
 		}
 	}
+}
+
+
+
+
+.box-grid{
+	> div{
+		height: 100%;
+	}
+	.box{
+		margin: 100px auto;
+		box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
+		min-height: 250px;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+		padding: 5% 7%;
+		img{
+			margin-bottom: 28px;
+		 }
+		 p{
+			 font-size: 20px;
+		 }
+	}
+
 }
