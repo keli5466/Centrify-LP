@@ -1,0 +1,80 @@
+body {
+  font-family: "Muli";
+}
+
+#lp .container {
+  max-width: 1260px;
+}
+
+.info-table {
+  background: #f2f2f2;
+}
+
+.table {
+  font-size: 17px;
+  color: #5d4b6c;
+  line-height: 1.47;
+}
+.table thead th {
+  margin-bottom: 30px;
+}
+.table tr:not(.title) {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px auto;
+}
+.table tr th:first-of-type,
+.table th {
+  width: 26%;
+  padding: 21px;
+}
+.table th:not(:first-of-type),
+.table td {
+  max-width: 288px;
+  width: 24%;
+  text-align: center;
+  margin-left: 24px;
+  background: white;
+}
+.table td {
+  background: white;
+  padding: 21px;
+}
+.table th {
+  font-weight: normal;
+}
+.table .title {
+  position: relative;
+  width: 100%;
+}
+.table .title th {
+  padding: 0 !important;
+}
+.table .title .title-line {
+  width: 100%;
+  position: relative;
+  height: 2px;
+}
+.table .title .title-line span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+  height: 2px;
+  color: #ae0000;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-left: 21px;
+}
+.table .title .title-line span:after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #ae0000;
+  margin-left: 68px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */

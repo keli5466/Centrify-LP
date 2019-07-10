@@ -1,0 +1,97 @@
+$gutter: 24px;
+$max-card-height: 26.25em;
+$bez: cubic-bezier(.22, .61, .36, 1);
+$light-grey:  #f2f2f2;
+$red: #ae0000;
+$border-gap: 2px;
+$cell-inner-pad: 21px;
+
+body{
+	font-family: "Muli";
+}
+#lp{
+	.container{
+		max-width: 1260px;
+	}
+}
+.info-table{
+		background: $light-grey;
+}
+.table{
+	font-size: 17px;
+	color:#5d4b6c;
+	line-height: 1.47;
+
+	// Table cards
+	thead th{
+		margin-bottom: 30px;
+	}
+
+
+
+
+
+	tr:not(.title){
+		display: flex;
+		justify-content: space-between;
+		margin: $border-gap auto;
+	}
+
+	// Layout & spacing
+	tr th:first-of-type,
+	th{
+		width:26%;
+		padding: $cell-inner-pad;
+	}
+	th:not(:first-of-type),
+	td{
+		max-width: 288px;
+		width: 24%;
+		text-align: center;
+		margin-left: $gutter;
+		background: white;
+	}
+	td{
+		background: white;
+		padding: $cell-inner-pad;
+	}
+	th{
+		font-weight: normal;
+	}
+
+	// Titles
+	.title{
+		position: relative;
+		width: 100%;
+		th{
+			padding: 0!important;
+		}
+		.title-line{
+			width: 100%;
+			position: relative;
+			height: $border-gap;
+			span{
+				position: absolute;
+				display: flex;
+				align-items: center;
+				width: 100%;
+				font-size: 17px;
+				font-weight: bold;
+				height: $border-gap;
+				color: $red;
+				font-weight: bold;
+				text-transform: uppercase;
+				padding-left: $cell-inner-pad;
+
+				&:after{
+					content: '';
+					height:$border-gap;
+					width: 100%;
+					background: $red;
+					margin-left: 68px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
