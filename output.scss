@@ -16,7 +16,8 @@ body{
 	}
 }
 .hero{
-	background: url('./img/Hero.png');
+	background: url('./img/Hero.png') no-repeat;
+	background-size: cover;
 	min-height: 500px;
 	display: flex;
 	h1{
@@ -33,6 +34,7 @@ body{
 	color:#5d4b6c;
 	line-height: 1.47;
 	margin-bottom: 114px;
+
 	[check]{
 		display: flex;
 		justify-content: center;
@@ -41,7 +43,6 @@ body{
 			content: url(./img/check.png);
 			display: inline-block;
 		}
-
 	}
 
 	// Table cards
@@ -102,8 +103,7 @@ body{
 	}
 
 	// Layout & spacing
-	tr th:first-of-type,
-	th{
+	tr th:first-of-type{
 		width:26%;
 		padding: $cell-inner-pad;
 	}
@@ -162,6 +162,19 @@ body{
 	}
 }
 
+// Responsive Table
+@media (max-width: 1200px){
+	.no-mobile{
+		display: none!important;
+	}
+	th:first-of-type{
+		width: 100%!important;
+	}
+	tbody tr{
+		flex-wrap: wrap;
+	}
+}
+
 
 
 .box-grid{
@@ -198,6 +211,7 @@ body{
 	.brand-grid{
 		.brand{
 			display: flex;
+			margin-top: 20px;
 			justify-content: center;
 			align-items: center;
 		}

@@ -10,7 +10,8 @@ body {
 }
 
 .hero {
-  background: url("./img/Hero.png");
+  background: url("./img/Hero.png") no-repeat;
+  background-size: cover;
   min-height: 500px;
   display: flex;
 }
@@ -89,8 +90,7 @@ body {
   justify-content: space-between;
   margin: 2px auto;
 }
-.table tr th:first-of-type,
-.table th {
+.table tr th:first-of-type {
   width: 26%;
   padding: 21px;
 }
@@ -145,6 +145,19 @@ body {
   display: inline-block;
 }
 
+@media (max-width: 1200px) {
+  .no-mobile {
+    display: none !important;
+  }
+
+  th:first-of-type {
+    width: 100% !important;
+  }
+
+  tbody tr {
+    flex-wrap: wrap;
+  }
+}
 .box-grid > div {
   height: 100%;
 }
@@ -176,6 +189,7 @@ body {
 }
 .brands .brand-grid .brand {
   display: flex;
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
