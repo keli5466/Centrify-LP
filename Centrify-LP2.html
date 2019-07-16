@@ -3,16 +3,19 @@
 
 
 <head>
-	<title>Page Title</title>
+	<title>LP 2</title>
 	<!-- bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Muli:400,300,600,700,800" rel="stylesheet">
 
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,300,600,700,800" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="slider.js"></script>
 </head>
 
 
@@ -130,29 +133,67 @@
 		</div>
 
 
-		<div class="container">
-			<div class="row box-grid">
-				<div class="col-lg-4">
-					<div class="d-flex flex-column box">
+		<div class="container bg-white">
+			<div class="row box-grid mobile-hide">
+				<div class="col-lg-4 active">
+					<div class=" d-flex flex-column box">
 						<img src="./img/Forrester.png" />
 						<p class="text-center">A Leader in the Forrester
 							PIM Wave, Q4 2018</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 trailing">
 					<div class="d-flex flex-column box">
 						<img src="./img/gartner.png" />
 						<p class="text-center">A Leader in the Gartner
 							PAM MQ, Q4 2018</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 prev">
 					<div class="d-flex flex-column box">
 						<img src="./img/Forrester.png" />
 						<p class="text-center">A Strong Performer in the Forrester
 							ZTX Wave</p>
 					</div>
 				</div>
+			</div>
+			<div id="demo" class="carousel slide desktop-hide" data-ride="">
+
+
+				<div class="box-grid carousel-inner">
+					<div class="col-lg-4 carousel-item active">
+						<div class=" d-flex flex-column box">
+							<img src="./img/Forrester.png" />
+							<p class="text-center">A Leader in the Forrester
+								PIM Wave, Q4 2018</p>
+						</div>
+					</div>
+
+
+					<div class="col-lg-4 carousel-item">
+						<div class=" d-flex flex-column box">
+							<img src="./img/Forrester.png" />
+							<p class="text-center">A Leader in the Forrester
+								PIM Wave, Q4 2018</p>
+						</div>
+					</div>
+
+
+					<div class="col-lg-4 carousel-item">
+						<div class=" d-flex flex-column box">
+							<img src="./img/Forrester.png" />
+							<p class="text-center">A Leader in the Forrester
+								PIM Wave, Q4 2018</p>
+						</div>
+					</div>
+
+				</div>
+				<ul class="carousel-indicators arrows">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+
 
 			</div>
 		</div>

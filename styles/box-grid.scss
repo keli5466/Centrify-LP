@@ -1,0 +1,55 @@
+.box-grid{
+	+ .arrows{
+		margin: 0  auto;
+		padding-bottom: 50px;
+		align-items: center;
+		position: relative;
+		li {
+			width: 10px;
+			border: none;
+			height:10px;
+			background: $red;
+			display: inline-block;
+			border-radius: 100%;
+			&:not(:last-of-type){
+				margin-right: 20px;
+			}
+			&:hover{
+				cursor: pointer;
+			}
+			&:not(.active){
+				background: grey;
+			}
+		}
+	}
+	> div{
+		transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+		opacity: 1;
+	}
+	> div{
+		height: 100%;
+	}
+	.box{
+		margin: 100px auto;
+		box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
+		min-height: 250px;
+		height: 100%;
+		max-width: 350px;
+		align-items: center;
+		justify-content: center;
+		padding: 5% 7%;
+		img{
+			margin-bottom: 28px;
+		 }
+		 p{
+			 font-size: 16px;
+		 }
+	}
+}
+@media (min-width: $tablet){
+	.box{
+		 p{
+			 font-size: 20px;
+		 }
+	 }
+}

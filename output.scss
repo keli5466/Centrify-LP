@@ -6,23 +6,40 @@ $light-grey:  #f2f2f2;
 $red: #ae0000;
 $border-gap: 2px;
 $cell-inner-pad: 21px;
+
+$tablet: 991px;
+
 @import './styles/lp-2.scss';
+@import './styles/brand-grid.scss';
+@import './styles/box-grid.scss';
 
 body{
-	font-family: "Muli";
+	font-family: "Muli"!important;
 }
+#lp-1-v2,
 #lp-1{
 	.top-container{
-		@media (min-width: 750px){
+		@media (min-width: $tablet){
 			margin-top: -250px;
 		}
 	}
 	.hero{
 		background-image: url('./img/Hero.png');
-		min-height: 500px;
+		min-height: 300px;
+		@media (min-width: $tablet){
+			min-height: 500px;
+		}
 	}
 }
 
+#lp-1-v2{
+	@media (min-width: 991px){
+		.table th:not(:first-of-type), .table td {
+			max-width: 400px;
+			width: 35%;
+		}
+	}
+}
 
 
 
@@ -60,7 +77,7 @@ body{
 			font-size: 66px;
 			margin-top: 10vh;
 			margin-bottom: 20px;
-			@media (max-width: 750px){
+			@media (max-width: $tablet){
 				font-size:34px;
 				line-height: 1.24;
 			}
@@ -73,11 +90,13 @@ body{
 		background: $light-grey;
 		height: 100%;
 }
+
+
 .table{
-	font-size: 17px;
+	font-size: 14px;
 	color:#5d4b6c;
-	line-height: 1.47;
-	margin-bottom: 114px;
+	line-height: 1.79;
+	margin-bottom: 40px;
 	[notcheck],
 	[check]{
 		display: flex;
@@ -93,17 +112,22 @@ body{
 	}
 
 	// Table cards
-	thead th{
+	.table-top-card-row.first .table-item{
 		margin-top: -50px;
-		&:nth-child(2){
+	}
+	.table-item{
+		&.num-1{
 			background: #540505;
 		}
-		&:nth-child(3){
+		&.num-2{
 			background: #7a0000;
 		}
-		&:nth-child(4){
+		&.num-3{
 			background: #ae0000;
 		}
+	}
+	thead th{
+
 		.table-top-card{
 			height: 100%;
 			p{
@@ -175,8 +199,6 @@ body{
 				padding: 21px;
 				transform: translateY(-50%);
 				font-size: 17px;
-				font-weight: bold;
-				// height: $border-gap;
 				color: $red;
 				font-weight: bold;
 				text-transform: uppercase;
@@ -192,9 +214,9 @@ body{
 			}
 		}
 	}
-	@media (max-width: 749px){
+	@media (max-width: $tablet - 1){
 		.table-top-card-row th{
-			width: 100%;
+			width: 100%!important;
 			min-height: 375px;
 		}
 		[check],
@@ -208,7 +230,13 @@ body{
 		}
 	}
 
-	@media (min-width: 750px){
+
+	@media (min-width: $tablet){
+		.table{
+			line-height: 1.47;
+			margin-bottom: 114px;
+			font-size: 17px;
+		}
 		thead th{
 			margin-top: -150px;
 			margin-bottom: 30px;
@@ -240,9 +268,7 @@ body{
 			.title-line{
 				height: $border-gap;
 				span{
-					font-size: 17px;
 					height: $border-gap;
-
 					&:after{
 						content: '';
 						height:$border-gap;
@@ -250,64 +276,16 @@ body{
 				}
 			}
 		}
-
 	}
-
-
 }
 
 .mobile-hide {
-	@media(max-width: 767px) {
+	@media(max-width: $tablet - 1) {
 		  display: none !important;
 	}
 }
 .desktop-hide {
-  @media(min-width: 768px) {
+  @media(min-width: $tablet) {
     display: none;
   }
-}
-.box-grid{
-	> div{
-		height: 100%;
-	}
-	.box{
-		margin: 100px auto;
-		box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
-		min-height: 250px;
-		height: 100%;
-		align-items: center;
-		justify-content: center;
-		padding: 5% 7%;
-		img{
-			margin-bottom: 28px;
-		 }
-		 p{
-			 font-size: 20px;
-		 }
-	}
-}
-
-// Brand grid
-.brands{
-	background: $light-grey;
-	padding-top: 120px;
-	padding-bottom: 120px;
-	h3{
-		font-size:45px;
-		line-height: 1.22;
-		margin-bottom: 100px;
-	}
-	.brand-grid{
-		.brand{
-			display: flex;
-			margin-top: 20px;
-			padding: 15px;
-			justify-content: center;
-			align-items: center;
-			img{
-				max-height: 60px;
-				max-width: 150px;
-			}
-		}
-	}
 }
