@@ -7,7 +7,7 @@
 		li {
 			width: 10px;
 			border: none;
-			height:10px;
+			height: 10px;
 			background: $red;
 			display: inline-block;
 			border-radius: 100%;
@@ -31,12 +31,10 @@
 	}
 	.box{
 		margin: 100px auto;
-		box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 18px 0 rgba(0, 0, 0, .1);
 		min-height: 250px;
 		height: 100%;
 		max-width: 350px;
-		align-items: center;
-		justify-content: center;
 		padding: 5% 7%;
 		img{
 			margin-bottom: 28px;
@@ -47,9 +45,7 @@
 	}
 }
 @media (min-width: $tablet){
-	.box{
-		 p{
-			 font-size: 20px;
-		 }
+	.box p{
+			font-size: 20px;
 	 }
 }

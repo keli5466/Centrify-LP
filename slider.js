@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function(){
   // Handler when the DOM is fully loaded
-	var slider = document.querySelectorAll('.box-grid > div');
+	var slider = document.querySelectorAll('.box align-items-center justify-content-center-grid > div');
 	console.log(slider);
 	var controls = document.querySelector('.arrows');
 
